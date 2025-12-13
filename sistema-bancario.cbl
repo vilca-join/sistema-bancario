@@ -120,7 +120,7 @@
                DISPLAY Invalid-Amount
            END-IF
            ELSE
-               DISPLAY "Cuenta no encontrada."
+               DISPLAY "Account not found."
            END-IF.
            CLOSE AccountFile.
 

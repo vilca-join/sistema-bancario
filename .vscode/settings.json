@@ -1,6 +1,17 @@
 {
     "cSpell.enabledLanguageIds": [
+        "plaintext",
+        "markdown",
+        "yaml",
+        "json",
+        "javascript",
+        "typescript",
         "COBOL",
         "ACUCOBOL"
-    ]
+    ],
+    "coboleditor.linter": false,
+    "[cobol]": {
+    "cSpell.enabled": false,
+    "editor.squiggles": "disabled"
+},
 }

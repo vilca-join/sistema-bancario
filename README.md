@@ -15,6 +15,23 @@ El objetivo del proyecto es **aprender la estructura y logica del lenguaje COBOL
 - Validar montos ingresados.
 - Almacenamiento en archivos `.dat`
 
+## Fujo del programa 
+- `MAIN-LOGIN`
+    - Muestra el menu del program.
+    - Se encarga de controlar el ciclo de ejecucion
+- `DISPLAY-MENU`
+    - Se listan las opciones.
+- `PROCESS-OPTION`
+    - Evalua la opcion ingresada
+    - Redirige a la rutina correspondiente
+- `CREATE-ACCOUNT`
+- `DEPOSIT-MONEY`
+    - HACE EL LLAMADO A -> `FIND-ACCOUNT` para buscar la cuenta.
+- `WITHDRAW-MONEY`
+    - HACE EL LLAMADO A -> `FIND-ACCOUNT` para buscar la cuenta.
+- `CHECK-BALANCE`
+    - HACE EL LLAMADO A -> `FIND-ACCOUNT` para buscar la cuenta.
+
 ## Tecnologias 
 
 - Lenguaje: **COBOL**

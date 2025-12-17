@@ -9,11 +9,13 @@ El objetivo del proyecto es **aprender la estructura y logica del lenguaje COBOL
 
 ## Funcionalidades
 
-- Crear cuentas bancarias.
-- Registrar depositos.
-- Registrar retiros.
-- Validar montos ingresados.
-- Almacenamiento en archivos `.dat`
+- Crear cuentas bancarias `Create-Account`.
+- Registrar depositos `Deposit-Money`.
+- Registrar retiros `Withdraw-Money`.
+- Consultar saldo actual `Check-Balance`.
+- Listar las cuentas registradas `List-Account`.
+- Limpiar el archivo `.dat` con `Clear-Account-File`(Funcionalidad en evaluacion). 
+- Almacenamiento en archivos `.dat` lectura y escritura.
 
 ## Fujo del programa 
 - `MAIN-LOGIN`
@@ -25,12 +27,20 @@ El objetivo del proyecto es **aprender la estructura y logica del lenguaje COBOL
     - Evalua la opcion ingresada
     - Redirige a la rutina correspondiente
 - `CREATE-ACCOUNT`
+    - Se ingresa el Id de la cuenta -> Evaluamos si existe la cuenta `Validate-ID-In-File`
+    - Una vez validado Id es guardado y el nombre del titular.
 - `DEPOSIT-MONEY`
     - HACE EL LLAMADO A -> `FIND-ACCOUNT` para buscar la cuenta.
+    - Si existe -> Ingresamos monto del deposito.
+    - No Existe -> Solicita de nuevo el Id de la cuenta.
 - `WITHDRAW-MONEY`
     - HACE EL LLAMADO A -> `FIND-ACCOUNT` para buscar la cuenta.
+    - Si existe -> Ingresamo el monto a retirar.
+    - No existe -> Solicita nuevamente el Id de la cuenta.
 - `CHECK-BALANCE`
     - HACE EL LLAMADO A -> `FIND-ACCOUNT` para buscar la cuenta.
+    - Si existe -> Muestra el estado de la cuenta
+    - No existe -> Solicita nuevamente el Id de la cuenta.
 
 ## Tecnologias 
 
